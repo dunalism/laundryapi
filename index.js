@@ -1079,13 +1079,11 @@ app.use(express.json());
 // Middleware untuk logging
 app.use(logger("dev"));
 
-app.use(express.static(path.join(__dirname, "public")));
-
 // Routing
 app.use("/api/v1", router$3, router$2, router$1, router);
 
 app.use((req, res, next) => {
-  res.status(404).sendFile(path.join(__dirname, "public", "index.html"));
+  res.status(404).json({ error: "The resource not found" });
   console.error(
     "The resource you are looking for was not found. Please check documentation https://github.com/dunalism/laundryapi"
   );
