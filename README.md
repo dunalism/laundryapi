@@ -109,7 +109,7 @@ fetch('http://localhost:5000/api/v1/endpoint', {
 
 ---
 
-### Built using
+## Built using
 
 - [SQlite](https://www.sqlite.org/) - Database
 - [Express](https://expressjs.com/) - Server Framework
@@ -117,11 +117,11 @@ fetch('http://localhost:5000/api/v1/endpoint', {
 
 ---
 
-### Acknowledgements
+## Acknowledgements
 
 This project is inspired by the [Enigma Laundry app API](https://github.com/jutionck/enigma-laundry-app-with-slice), an API used in the final submission for the React JS course at [Enigmacamp](https://enigmacamp.com/). Special thanks to the original creators for their work and for providing a strong foundation for this application.
 
-### Contact
+## Contact
 
 If you have any questions, want to report a bug, or provide feedback, feel free to reach out
 
