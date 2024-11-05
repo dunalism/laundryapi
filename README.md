@@ -14,7 +14,7 @@ This application is a RESTful API built with Express.js using Role-Based Access 
 
 ## Prerequisites
 
-- **Node.js** (recommended version 14 or higher)
+- **Node.js** (recommended version 18 or higher)
 - **Postman** (recomended)
 
 ## Installation
