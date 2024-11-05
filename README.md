@@ -32,6 +32,12 @@ This application is a RESTful API built with Express.js using Role-Based Access 
    npm start
    ```
 
+## Testing the Application with [Postman](https://www.postman.com/downloads/)
+
+To simplify testing of the application, you can use postman by [importing](https://learning.postman.com/docs/getting-started/importing-and-exporting/importing-data/) the available Postman collection and environment files. This will [set up](https://learning.postman.com/docs/getting-started/basics/navigating-postman/#environment-selector-and-variables-pane) all the endpoints and necessary variables for easier testing.
+
+---
+
 ## API Documentation
 
 For all endpoints that require authentication, you need to include the Bearer token in the headers. Here’s how to fetch data using JavaScript (fetch API).
@@ -109,7 +115,13 @@ fetch('http://localhost:5000/api/v1/endpoint', {
 
 ---
 
-## Built using
+### Important Note on Data Deletion
+
+Since this application uses a relational database with foreign key constraints, please exercise caution when deleting users, customers, or products. If you delete a user, customer, or product that is associated with any transactions, those related transaction records will also be deleted due to the foreign key relationship. This may result in the loss of important transaction data.
+
+---
+
+### Built using
 
 - [SQlite](https://www.sqlite.org/) - Database
 - [Express](https://expressjs.com/) - Server Framework
@@ -117,11 +129,11 @@ fetch('http://localhost:5000/api/v1/endpoint', {
 
 ---
 
-## Acknowledgements
+### Acknowledgements
 
 This project is inspired by the [Enigma Laundry app API](https://github.com/jutionck/enigma-laundry-app-with-slice), an API used in the final submission for the React JS course at [Enigmacamp](https://enigmacamp.com/). Special thanks to the original creators for their work and for providing a strong foundation for this application.
 
-## Contact
+### Contact
 
 If you have any questions, want to report a bug, or provide feedback, feel free to reach out
 

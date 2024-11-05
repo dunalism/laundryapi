@@ -389,6 +389,12 @@ const deleteUser = (req, res) => {
       .status(400)
       .json({ message: "You don't have authority over that method" });
 
+  if (id == 1 && role == "owner")
+    return res.status(400).json({
+      message:
+        "You are the owner, if you delete your own account who becomes the owner?",
+    });
+
   deleteUsers(id, (err, result) => {
     if (err) return res.status(500).json({ error: err.message });
     if (result.changes === 0) {
@@ -1085,7 +1091,7 @@ app.use("/api/v1", router$3, router$2, router$1, router);
 app.use((req, res, next) => {
   res.status(404).json({ error: "The resource not found" });
   console.error(
-    "The resource you are looking for was not found. Please check documentation https://github.com/dunalism/laundryapi"
+    "The resource not found. Please check documentation https://github.com/dunalism/laundryapi"
   );
 });
 
