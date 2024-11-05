@@ -32,6 +32,22 @@ This application is a RESTful API built with Express.js using Role-Based Access 
    npm start
    ```
 
+### Executable files
+
+you can also run this application on windows by downloading the [.exe](https://drive.google.com/file/d/1VRLbKiHix_NwAQihBDRidaHP4GfIL6_Y/view?usp=sharing) file. Don't forget to include the .env file in the repository.
+
+Command Prompt (CMD):
+
+```bash
+laundryapi.exe
+```
+
+Windows PowerShell:
+
+```bash
+./laundryapi.exe
+```
+
 ## Testing the Application with [Postman](https://www.postman.com/downloads/)
 
 To simplify testing of the application, you can use postman by [importing](https://learning.postman.com/docs/getting-started/importing-and-exporting/importing-data/) the available Postman collection and environment files. This will [set up](https://learning.postman.com/docs/getting-started/basics/navigating-postman/#environment-selector-and-variables-pane) all the endpoints and necessary variables for easier testing.
